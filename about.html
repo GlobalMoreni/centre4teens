@@ -120,9 +120,11 @@ teams_carousel:
       <div class="space30 d-none d-md-block d-lg-none"></div>
       <div class="col-lg-6 pl-60 pl-md-15">
         {% if page.video_area.title %}
-        <h2 class="title-color color-gray">{{page.video_area.title}}</h2>
+        <h2 class="title-color color-red">{{page.video_area.title}}</h2>
         {% endif %} {% if page.video_area.sub_title %}
-        <h class="font-weight-500 text-[17px]">{{page.video_area.sub_title}}</h>
+        <h2 class="font-weight-500 text-[17px]">
+          {{page.video_area.sub_title}}
+        </h2>
         {% endif %}
         <div class="space20"></div>
         <p class="">{{page.video_area.description}}</p>
@@ -290,7 +292,9 @@ teams_carousel:
 </div>
 <div class="wrapper light-wrapper">
   <div class="container inner">
-    <h2 class="section-title text-center">{{page.portfolio.title}}</h2>
+    <h2 class="section-title text-center color-red">
+      {{page.portfolio.title}}
+    </h2>
     <div class="grid-view boxed light-gallery-wrapper text-center">
       <div
         class="carousel owl-carousel gap-small"
