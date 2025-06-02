@@ -191,31 +191,31 @@ portfolios_area:
 
     - title: "Project Education & Reproductive Health (1)"
       sub_title: "Project Education & Reproductive Health Photo"
-      sm_image: "/assets/images/projects/Project Education & Reproductive Health Photo/IMG_2578.png"
-      big_image: "/assets/images/projects/Project Education & Reproductive Health Photo/IMG_2578.png"
+      sm_image: "/assets/images/projects/Project Education & Reproductive Health Photo/IMG_2578.PNG"
+      big_image: "/assets/images/projects/Project Education & Reproductive Health Photo/IMG_2578.PNG"
       url: "#"
       filters:
         - "Project Education & Reproductive Health"
 
     - title: "Project Education & Reproductive Health (2)"
       sub_title: "Project Education & Reproductive Health Photo"
-      sm_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0352.jpg"
-      big_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0352.jpg"
+      sm_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0352.JPG"
+      big_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0352.JPG"
       url: "#"
       filters:
         - "Project Education & Reproductive Health"
 
     - title: "Project Education & Reproductive Health (3)"
       sub_title: "Project Education & Reproductive Health Photo"
-      sm_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0357.jpg"
-      big_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0357.jpg"
+      sm_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0357.JPG"
+      big_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0357.JPG"
       url: "#"
       filters:
         - "Project Education & Reproductive Health"
 
     - title: "Project Education & Reproductive Health (4)"
       sub_title: "Project Education & Reproductive Health Photo"
-      sm_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0366.jpg"
+      sm_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0366.JPG"
       big_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0366.jpg"
       url: "#"
       filters:
@@ -223,8 +223,8 @@ portfolios_area:
 
     - title: "Project Education & Reproductive Health (5)"
       sub_title: "Project Education & Reproductive Health Photo"
-      sm_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0390.jpg"
-      big_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0390.jpg"
+      sm_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0390.JPG"
+      big_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0390.JPG"
       url: "#"
       filters:
         - "Project Education & Reproductive Health"
