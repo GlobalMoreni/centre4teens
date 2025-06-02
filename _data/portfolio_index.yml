@@ -1,0 +1,390 @@
+portfolios_area:
+  enable: true
+  title: "My Portfolio"
+  sub_title: "Check out some of my Projects and Achievements"
+  button_url: "https://drive.google.com/drive/folders/1MCTq2OncNLNYjByCjM0RRLvHIDE1m1yU?usp=drive_link"
+  button_text: "View our Projects"
+  categories:
+    - title: "BoyThrive Conference"
+      filter: "BoyThrive"
+    - title: "Catalyst of Change Program"
+      filter: "Catalyst_of_Change_Program"
+    - title: "Cloth Distribution Project"
+      filter: "Cloth Distribution Project"
+    - title: "Mental Health Awareness Program"
+      filter: "Mental Health Awareness Program"
+    - title: "Project Education & Reproductive Health"
+      filter: "Project Education & Reproductive Health"
+    - title: "Project Empower Her"
+      filter: "Project Empower Her"
+    - title: "Project Reach IDPs"
+      filter: "Project Reach IDPs"
+    - title: "Seen Summit"
+      filter: "Seen Summit"
+    - title: "team_members"
+      filter: "team_members"
+    - title: "WASH Project"
+      filter: "WASH Project"
+
+  portfolios:
+    - title: "BoyThrive (4)"
+      sub_title: "BoyThrive Conference Photo"
+      sm_image: "/assets/images/projects/BoyThrive Conference/1 (4).jpeg"
+      big_image: "/assets/images/projects/BoyThrive Conference/1 (4).jpeg"
+      url: "#"
+      filters:
+        - "BoyThrive"
+
+    - title: "BoyThrive (13)"
+      sub_title: "BoyThrive Conference Photo"
+      sm_image: "/assets/images/projects/BoyThrive Conference/1 (13).jpeg"
+      big_image: "/assets/images/projects/BoyThrive Conference/1 (13).jpeg"
+      url: "#"
+      filters:
+        - "BoyThrive"
+
+    - title: "BoyThrive (19)"
+      sub_title: "BoyThrive Conference Photo"
+      sm_image: "/assets/images/projects/BoyThrive Conference/1 (19).jpeg"
+      big_image: "/assets/images/projects/BoyThrive Conference/1 (19).jpeg"
+      url: "#"
+      filters:
+        - "BoyThrive"
+
+    - title: "BoyThrive (24)"
+      sub_title: "BoyThrive Conference Photo"
+      sm_image: "/assets/images/projects/BoyThrive Conference/1 (24).jpeg"
+      big_image: "/assets/images/projects/BoyThrive Conference/1 (24).jpeg"
+      url: "#"
+      filters:
+        - "BoyThrive"
+
+    - title: "BoyThrive (36)"
+      sub_title: "BoyThrive Conference Photo"
+      sm_image: "/assets/images/projects/BoyThrive Conference/1 (36).jpeg"
+      big_image: "/assets/images/projects/BoyThrive Conference/1 (36).jpeg"
+      url: "#"
+      filters:
+        - "BoyThrive"
+
+    # Catalyst of Change Program
+
+    - title: "Michael Ogunbiyi"
+      sub_title: "Catalyst of Change Program"
+      sm_image: "/assets/images/projects/Catalyst of Change Program/IMG_2196.PNG"
+      big_image: "/assets/images/projects/Catalyst of Change Program/IMG_2196.PNG"
+      url: "#"
+      filters:
+        - Catalyst_of_Change_Program
+
+    - title: "Lucky Owoicho"
+      sub_title: "Catalyst of Change Program"
+      sm_image: "/assets/images/projects/Catalyst of Change Program/IMG_2197.PNG"
+      big_image: "/assets/images/projects/Catalyst of Change Program/IMG_2197.PNG"
+      url: "#"
+      filters:
+        - Catalyst_of_Change_Program
+
+    - title: "Virtual Session Screenshot"
+      sub_title: "Catalyst of Change Program"
+      sm_image: "/assets/images/projects/Catalyst of Change Program/IMG_2198.PNG"
+      big_image: "/assets/images/projects/Catalyst of Change Program/IMG_2198.PNG"
+      url: "#"
+      filters:
+        - Catalyst_of_Change_Program
+
+    - title: "Virtual Session Screenshot"
+      sub_title: "Catalyst of Change Program"
+      sm_image: "/assets/images/projects/Catalyst of Change Program/IMG_2199.PNG"
+      big_image: "/assets/images/projects/Catalyst of Change Program/IMG_2199.PNG"
+      url: "#"
+      filters:
+        - Catalyst_of_Change_Program
+
+    - title: "Virtual Session Screenshot"
+      sub_title: "Catalyst of Change Program"
+      sm_image: "/assets/images/projects/Catalyst of Change Program/IMG_2200.PNG"
+      big_image: "/assets/images/projects/Catalyst of Change Program/IMG_2200.PNG"
+      url: "#"
+      filters:
+        - Catalyst_of_Change_Program
+
+    - title: "Cloth Distribution (1)"
+      sub_title: "Cloth Distribution Project Photo"
+      sm_image: "/assets/images/projects/Cloth Distribution Project/IMG_8439.webp"
+      big_image: "/assets/images/projects/Cloth Distribution Project/IMG_8439.webp"
+      url: "#"
+      filters:
+        - "Cloth Distribution Project"
+
+    - title: "Cloth Distribution (2)"
+      sub_title: "Cloth Distribution Project Photo"
+      sm_image: "/assets/images/projects/Cloth Distribution Project/IMG_8441.webp"
+      big_image: "/assets/images/projects/Cloth Distribution Project/IMG_8441.webp"
+      url: "#"
+      filters:
+        - "Cloth Distribution Project"
+
+    - title: "Cloth Distribution (3)"
+      sub_title: "Cloth Distribution Project Photo"
+      sm_image: "/assets/images/projects/Cloth Distribution Project/IMG_8463.webp"
+      big_image: "/assets/images/projects/Cloth Distribution Project/IMG_8463.webp"
+      url: "#"
+      filters:
+        - "Cloth Distribution Project"
+
+    - title: "Cloth Distribution (4)"
+      sub_title: "Cloth Distribution Project Photo"
+      sm_image: "/assets/images/projects/Cloth Distribution Project/IMG_8470.webp"
+      big_image: "/assets/images/projects/Cloth Distribution Project/IMG_8470.webp"
+      url: "#"
+      filters:
+        - "Cloth Distribution Project"
+
+    - title: "Cloth Distribution (5)"
+      sub_title: "Cloth Distribution Project Photo"
+      sm_image: "/assets/images/projects/Cloth Distribution Project/IMG_8478.webp"
+      big_image: "/assets/images/projects/Cloth Distribution Project/IMG_8478.webp"
+      url: "#"
+      filters:
+        - "Cloth Distribution Project"
+
+    - title: "Mental Health (1)"
+      sub_title: "Mental Health Awareness Program Photo"
+      sm_image: "/assets/images/projects/Mental Health Awareness Program/IMG_0780.jpeg"
+      big_image: "/assets/images/projects/Mental Health Awareness Program/IMG_0780.jpeg"
+      url: "#"
+      filters:
+        - "Mental Health Awareness Program"
+
+    - title: "Mental Health (2)"
+      sub_title: "Mental Health Awareness Program Photo"
+      sm_image: "/assets/images/projects/Mental Health Awareness Program/IMG_0783.jpeg"
+      big_image: "/assets/images/projects/Mental Health Awareness Program/IMG_0783.jpeg"
+      url: "#"
+      filters:
+        - "Mental Health Awareness Program"
+
+    - title: "Mental Health (3)"
+      sub_title: "Mental Health Awareness Program Photo"
+      sm_image: "/assets/images/projects/Mental Health Awareness Program/IMG_0802.jpeg"
+      big_image: "/assets/images/projects/Mental Health Awareness Program/IMG_0802.jpeg"
+      url: "#"
+      filters:
+        - "Mental Health Awareness Program"
+
+    - title: "Mental Health (4)"
+      sub_title: "Mental Health Awareness Program Photo"
+      sm_image: "/assets/images/projects/Mental Health Awareness Program/IMG_0807.jpeg"
+      big_image: "/assets/images/projects/Mental Health Awareness Program/IMG_0807.jpeg"
+      url: "#"
+      filters:
+        - "Mental Health Awareness Program"
+
+    - title: "Mental Health (5)"
+      sub_title: "Mental Health Awareness Program Photo"
+      sm_image: "/assets/images/projects/Mental Health Awareness Program/IMG_0992.jpeg"
+      big_image: "/assets/images/projects/Mental Health Awareness Program/IMG_0992.jpeg"
+      url: "#"
+      filters:
+        - "Mental Health Awareness Program"
+
+    - title: "Project Education & Reproductive Health (1)"
+      sub_title: "Project Education & Reproductive Health Photo"
+      sm_image: "/assets/images/projects/Project Education & Reproductive Health Photo/IMG_2578.png"
+      big_image: "/assets/images/projects/Project Education & Reproductive Health Photo/IMG_2578.png"
+      url: "#"
+      filters:
+        - "Project Education & Reproductive Health"
+
+    - title: "Project Education & Reproductive Health (2)"
+      sub_title: "Project Education & Reproductive Health Photo"
+      sm_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0352.jpg"
+      big_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0352.jpg"
+      url: "#"
+      filters:
+        - "Project Education & Reproductive Health"
+
+    - title: "Project Education & Reproductive Health (3)"
+      sub_title: "Project Education & Reproductive Health Photo"
+      sm_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0357.jpg"
+      big_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0357.jpg"
+      url: "#"
+      filters:
+        - "Project Education & Reproductive Health"
+
+    - title: "Project Education & Reproductive Health (4)"
+      sub_title: "Project Education & Reproductive Health Photo"
+      sm_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0366.jpg"
+      big_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0366.jpg"
+      url: "#"
+      filters:
+        - "Project Education & Reproductive Health"
+
+    - title: "Project Education & Reproductive Health (5)"
+      sub_title: "Project Education & Reproductive Health Photo"
+      sm_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0390.jpg"
+      big_image: "/assets/images/projects/Project Education & Reproductive Health Photo/MG_0390.jpg"
+      url: "#"
+      filters:
+        - "Project Education & Reproductive Health"
+
+    - title: "Project Empower Her 2023 (1)"
+      sub_title: "Project Empower Her 2023"
+      sm_image: "/assets/images/projects/Project Empower Her 2023/IMG_4654.jpeg"
+      big_image: "/assets/images/projects/Project Empower Her 2023/IMG_4654.jpeg"
+      url: "#"
+      filters:
+        - "Project Empower Her 2023"
+
+    - title: "Project Empower Her 2023 (2)"
+      sub_title: "Project Empower Her 2023"
+      sm_image: "/assets/images/projects/Project Empower Her 2023/IMG_4666.jpeg"
+      big_image: "/assets/images/projects/Project Empower Her 2023/4666.jpeg"
+      url: "#"
+      filters:
+        - "Project Empower Her 2023"
+
+    - title: "Project Empower Her 2023 (3)"
+      sub_title: "Project Empower Her 2023 Photo"
+      sm_image: "/assets/images/projects/Project Empower Her 2023/IMG_4686.jpeg"
+      big_image: "/assets/images/projects/Project Empower Her 2023/IMG_4686.jpeg"
+      url: "#"
+      filters:
+        - "Project Empower Her 2023"
+
+    - title: "Project Empower Her 2023 (4)"
+      sub_title: "Project Empower Her 2023"
+      sm_image: "/assets/images/projects/Project Empower Her 2023/IMG_4696.jpeg"
+      big_image: "/assets/images/projects/Project Empower Her 2023/IMG_4696.jpeg"
+      url: "#"
+      filters:
+        - "Project Empower Her 2023"
+
+    - title: "Project Empower Her 2023 (5)"
+      sub_title: "Project Empower Her 2023"
+      sm_image: "/assets/images/projects/Project Empower Her 2023/IMG_4705.jpeg"
+      big_image: "/assets/images/projects/Project Empower Her 2023/IMG_4705.jpeg"
+      url: "#"
+      filters:
+        - "Project Empower Her 2023"
+
+    - title: "Project Reach IDPs 2023 (1)"
+      sub_title: "Project Reach IDPs 2023"
+      sm_image: "/assets/images/projects/Project Reach IDPs 2023/IMG_5184.jpeg"
+      big_image: "/assets/images/projects/Project Reach IDPs 2023/IMG_5184.jpeg"
+      url: "#"
+      filters:
+        - "Project Reach IDPs 2023"
+
+    - title: "Project Reach IDPs 2023 (2)"
+      sub_title: "Project Reach IDPs 2023"
+      sm_image: "/assets/images/projects/Project Reach IDPs 2023/IMG_5193.jpeg"
+      big_image: "/assets/images/projects/Project Reach IDPs 2023/IMG_5193.jpeg"
+      url: "#"
+      filters:
+        - "Project Reach IDPs 2023"
+
+    - title: "Project Reach IDPs 2023 (3)"
+      sub_title: "Project Reach IDPs 2023"
+      sm_image: "/assets/images/projects/Project Reach IDPs 2023/IMG_5199.jpeg"
+      big_image: "/assets/images/projects/Project Reach IDPs 2023/IMG_5199.jpeg"
+      url: "#"
+      filters:
+        - "Project Reach IDPs 2023"
+
+    - title: "Project Reach IDPs 2023 (4)"
+      sub_title: "Project Reach IDPs 2023"
+      sm_image: "/assets/images/projects/Project Reach IDPs 2023/IMG_5289.jpeg"
+      big_image: "/assets/images/projects/Project Reach IDPs 2023/IMG_5289.jpeg"
+      url: "#"
+      filters:
+        - "Project Reach IDPs 2023"
+
+    - title: "Project Reach IDPs 2023 (5)"
+      sub_title: "Project Reach IDPs 2023"
+      sm_image: "/assets/images/projects/Project Reach IDPs 2023/IMG_5328.jpeg"
+      big_image: "/assets/images/projects/Project Reach IDPs 2023/IMG_5328.jpeg"
+      url: "#"
+      filters:
+        - "Project Reach IDPs 2023"
+
+    - title: "Seen Summit 2024 (1)"
+      sub_title: "Seen Summit 2024"
+      sm_image: "/assets/images/projects/Seen Summit 2024/SEEN SUMMIT 2024-5.jpeg"
+      big_image: "/assets/images/projects/Seen Summit 2024/SEEN SUMMIT 2024-5.jpeg"
+      url: "#"
+      filters:
+        - "Seen Summit 2024"
+
+    - title: "Seen Summit 2024 (2)"
+      sub_title: "Seen Summit 2024"
+      sm_image: "/assets/images/projects/Seen Summit 2024/SEEN SUMMIT 2024-6.jpeg"
+      big_image: "/assets/images/projects/Seen Summit 2024/SEEN SUMMIT 2024-6.jpeg"
+      url: "#"
+      filters:
+        - "Seen Summit 2024"
+
+    - title: "Seen Summit 2024 (3)"
+      sub_title: "Seen Summit 2024"
+      sm_image: "/assets/images/projects/Seen Summit 2024/SEEN SUMMIT 2024-7.jpeg"
+      big_image: "/assets/images/projects/Seen Summit 2024/SEEN SUMMIT 2024-7.jpeg"
+      url: "#"
+      filters:
+        - "Seen Summit 2024"
+
+    - title: "Seen Summit 2024 (4)"
+      sub_title: "Seen Summit 2024"
+      sm_image: "/assets/images/projects/Seen Summit 2024/SEEN SUMMIT 2024-8.jpeg"
+      big_image: "/assets/images/projects/Seen Summit 2024/SEEN SUMMIT 2024-8.jpeg"
+      url: "#"
+      filters:
+        - "Seen Summit 2024"
+
+    - title: "Seen Summit 2024 (5)"
+      sub_title: "Seen Summit 2024"
+      sm_image: "/assets/images/projects/Seen Summit 2024/SEEN SUMMIT 2024-18.jpeg"
+      big_image: "/assets/images/projects/Seen Summit 2024/SEEN SUMMIT 2024-18.jpeg"
+      url: "#"
+      filters:
+        - "Seen Summit 2024"
+
+    - title: "WASH Project 2024 (1)"
+      sub_title: "WASH Project 2024"
+      sm_image: "/assets/images/projects/WASH Project 2024/IMG_5097.jpeg"
+      big_image: "/assets/images/projects/WASH Project 2024/IMG_5097.jpeg"
+      url: "#"
+      filters:
+        - "WASH Project 2024"
+
+    - title: "WASH Project 2024 (2)"
+      sub_title: "WASH Project 2024"
+      sm_image: "/assets/images/projects/WASH Project 2024/IMG_5098.jpeg"
+      big_image: "/assets/images/projects/WASH Project 2024/IMG_5098.jpeg"
+      url: "#"
+      filters:
+        - "WASH Project 2024"
+
+    - title: "WASH Project 2024 (3)"
+      sub_title: "WASH Project 2024"
+      sm_image: "/assets/images/projects/WASH Project 2024/IMG_5101.jpeg"
+      big_image: "/assets/images/projects/WASH Project 2024/IMG_5101.jpeg"
+      url: "#"
+      filters:
+        - "WASH Project 2024"
+
+    - title: "WASH Project 2024 (4)"
+      sub_title: "WASH Project 2024"
+      sm_image: "/assets/images/projects/WASH Project 2024/IMG_5108.jpeg"
+      big_image: "/assets/images/projects/WASH Project 2024/IMG_5108.jpeg"
+      url: "#"
+      filters:
+        - "WASH Project 2024"
+
+    - title: "WASH Project 2024 (5)"
+      sub_title: "WASH Project 2024"
+      sm_image: "/assets/images/projects/WASH Project 2024/IMG_5113.jpeg"
+      big_image: "/assets/images/projects/WASH Project 2024/IMG_5113.jpeg"
+      url: "#"
+      filters:
+        - "WASH Project 2024"

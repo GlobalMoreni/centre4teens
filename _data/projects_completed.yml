@@ -1,0 +1,15 @@
+completed_projects:
+  enable: true
+  bg_image: "/assets/images/art/bg15.webp"
+  lists:
+    - numbers: "150"
+      title: "Completed Projects"
+
+    - numbers: "6"
+      title: "Countries Reached"
+
+    - numbers: "500"
+      title: "Children Impacted in 2024"
+
+    - numbers: "2000"
+      title: "Number of People Impacted"

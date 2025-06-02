@@ -1,0 +1,28 @@
+services_area:
+  enable: true
+  title: "Our Objectives"
+  sub_title: "TCentre for Teens Health and Development (Centre4Teens) is a youth-focused non-profit organization dedicated to supporting the holistic growth of teenagers across Nigeria."
+  description: |
+
+  button_text: "More Details"
+  button_url: "#"
+  services:
+    - title: "Our Mission"
+      description: "A world where every teenager is healthy, confident, and empowered to reach their full potential and contribute meaningfully to society."
+      icon: "icofont-code"
+      bg_color: "bg-pink"
+
+    - title: "Product Design"
+      description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida."
+      icon: "icofont-magic-alt"
+      bg_color: "bg-blue"
+
+    - title: "Identity & Branding"
+      description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida."
+      icon: "icofont-paint"
+      bg_color: "bg-green"
+
+    - title: "Mobile Design"
+      description: "Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida."
+      icon: "icofont-smart-phone"
+      bg_color: "bg-purple"

@@ -1,0 +1,10 @@
+slider_area:
+  enable: true
+  title: Centre For Teens
+  title_2: Health and Development
+  sub_title: Educate. Empower. Transform
+  sliders:
+    - img: "/assets/images/display/image-1.jpg"
+    - img: "/assets/images/display/image-2.jpg"
+    - img: "/assets/images/display/image-5.jpg"
+    - img: "/assets/images/display/image-4.jpg"

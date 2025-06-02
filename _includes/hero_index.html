@@ -1,0 +1,105 @@
+<style>
+  /* Add to your main CSS file */
+  .slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* allows slider controls to work */
+  }
+  .tp-caption_title {
+    font-weight: 900 !important;
+  }
+  .slider-overlay-text {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  @media (max-width: 768px) {
+    .title_1 {
+      font-size: 20px !important;
+    }
+    .title_2 {
+      font-size: 20px !important;
+      margin-top: 10px !important;
+      line-height: 37px;
+      font-weight: 900;
+    }
+    .subtitle {
+      font-size: 15px !important;
+      margin-top: 40px !important;
+    }
+  }
+</style>
+<div class="wrapper dark-wrapper">
+  <div class="rev_slider_wrapper fullscreen-container">
+    <div id="slider9" class="rev_slider fullscreenbanner" data-version="5.4.7">
+      <ul>
+        {% for slider in site.data.hero_index.slider_area.sliders %}
+        <li data-transition="fade" data-thumb="{{slider.img}}">
+          <img src="{{slider.img}}" alt="{{slider.title}}" />
+          <div class="slider-overlay">
+            <div class="slider-overlay-text">{{slider.title}}</div>
+          </div>
+        </li>
+
+        {% endfor %}
+      </ul>
+      <div class="tp-static-layers hero_container">
+        <!-- /.tp-caption -->
+        {% if site.data.hero_index.slider_area.title %}
+        <div
+          class="tp-caption tp-caption_title tp-static-layer text-uppercase mt-[-70px] font-weight-900 color-white text-center"
+          data-x="center"
+          data-y="middle"
+          data-voffset="['0','0','0','10']"
+          data-fontsize="['50','50','50','35']"
+          data-lineheight="['60','60','60','56']"
+          data-width="['600','600','600','340']"
+          data-textAlign="['center','center','center','center']"
+          data-whitespace="['normal','normal','normal','normal']"
+          data-frames='[{"delay":500,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]'
+          data-responsive="on"
+          data-responsive_offset="on"
+          data-startslide="0"
+          data-endslide="7"
+          style="z-index: 9"
+        >
+          <span class="title_1">
+            {{site.data.hero_index.slider_area.title}}</span
+          >
+
+          <h2
+            class="text-white title_2"
+            style="
+              font-size: 39px;
+              margin-top: 10px;
+              line-height: 20px;
+              font-weight: 900;
+            "
+          >
+            {{site.data.hero_index.slider_area.title_2}}
+          </h2>
+          <h4
+            class="text-white subtitle"
+            style="font-size: 20px; margin-top: 50px; color: red"
+          >
+            {{site.data.hero_index.slider_area.sub_title}}
+          </h4>
+        </div>
+        <!-- /.tp-caption -->
+        {% endif %}
+      </div>
+      <div class="tp-bannertimer tp-bottom"></div>
+    </div>
+    <!-- /.rev_slider -->
+  </div>
+</div>
+<!-- /.wrapper -->

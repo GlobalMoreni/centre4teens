@@ -1,0 +1,125 @@
+# General Settings
+title: "Centre4teens"
+email: "info@Centre4teens.org"
+email_2: ""
+description: >- # this means to ignore newlines until "baseurl:"
+
+# Site Wide Theme Color Setting
+color_scheme: Red # Aqua Blue Brown Cobalt Green Hibiscus Leaf Meander Orange Pink Purple Red Rose Sky Teal Violet Yellow
+
+# Site Wide Theme Font Setting
+font_scheme: # Jost, Nunito , DM Sans + Zilla Slab , HK Grotesk, Abhaya, Libre
+
+# Sitewide Logo
+black_logo_1x: "/assets/images/logo/logo.png"
+black_logo_2x: "/assets/images/logo/logo.png"
+light_logo_1x: "/assets/images/logo/logo.png"
+light_logo_2x: "/assets/images/logo/logo.png"
+
+address_01: "Tundu Fulani<br>Bwari,<br /> Abuja, Nigeria"
+phone_number: "+234 815 645 8620"
+about_us: " “Centre for Teens is a safe, supportive space where Nigerian teenagers are empowered with knowledge, life skills, and opportunities to thrive.”"
+copyright_text: "© 2025 Centre4Teens. All rights reserved."
+
+google_analytics:
+  enable: false
+  key: "UA-664136761-1" # UA-664136761-1
+
+google_map: |
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.10798916003228!2d7.361161064310747!3d9.268595936370057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104ddd5b56355759%3A0xfa741c0f18afc6d4!2sTudun%20Fulani%20New%20Site%20Mosque!5e0!3m2!1sen!2sng!4v1747587437410!5m2!1sen!2sng"  style="width:100%; height: 100%; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+social_accounts:
+  title: "Follow Us"
+  links:
+    - url: "https://www.linkedin.com/company/centre4teens/"
+      icon: "fab fa-linkedin"
+
+    - url: "https://www.facebook.com/profile.php?id=100092581213755&mibextid=LQQJ4d"
+      icon: "fab fa-facebook"
+
+    - url: "https://www.instagram.com/centre4teens?igsh=b2pnOWJ1bHRjaDgz&utm_source=qr"
+      icon: "fab fa-instagram"
+
+    - url: "https://www.tiktok.com/@centre4teens?_t=8n7cT1BtMpy&_r=1"
+      icon: "fab fa-tiktok"
+
+    - url: "https://www.youtube.com/@Centre4Teens"
+      icon: "fab fa-youtube"
+
+external_links:
+  title: "Navigation Links"
+  links:
+    - url: "/"
+      text: "Home"
+    - url: "/about"
+      text: "About me"
+    - url: "/portfolios"
+      text: "My Portfolio"
+    # - url: "/insights"
+    #   text: "Insights"
+    # - url: "/mission"
+    #   text: "Missions"
+    - url: "/blogs"
+      text: "Blogs"
+
+external_links_02:
+  title: "Need Help?"
+  links:
+    - url: "#"
+      text: "Support"
+    - url: "#"
+      text: "Get Started"
+    - url: "#"
+      text: "Contact Us"
+    - url: "#"
+      text: "Terms of Use"
+    - url: "#"
+      text: "Privacy Policy"
+
+external_links_03:
+  title: "Company"
+  links:
+    - url: "#"
+      text: "Our Team"
+    - url: "#"
+      text: "Strategy"
+    - url: "#"
+      text: "Service"
+    - url: "#"
+      text: "Mission"
+    - url: "#"
+      text: "Process"
+
+footer_newsletter:
+  title: "Our Newsletter"
+  sub_title: "Subscribe to our newsletter to get our news & deals delivered to your inbox!"
+  subscribe_button_text: "Join"
+
+one_page_nav_settings:
+  links:
+    - text: "Home"
+      url: "#home"
+    - text: "Services"
+      url: "#services"
+    - text: "Experiences"
+      url: "#experiences"
+    - text: "Portfolio"
+      url: "#portfolio"
+    - text: "Testimonials"
+      url: "#testimonials"
+    - text: "Contact"
+      url: "#contact"
+
+author_page_header:
+  header_background_image: "/assets/images/art/bg31.webp"
+
+gallery:
+  images:
+    - img: "/assets/images/art/z1.svg"
+    - img: "/assets/images/art/z2.svg"
+    - img: "/assets/images/art/z3.svg"
+    - img: "/assets/images/art/z4.svg"
+    - img: "/assets/images/art/z5.svg"
+    - img: "/assets/images/art/z6.svg"
+    - img: "/assets/images/art/z7.svg"
+    - img: "/assets/images/art/z8.svg"

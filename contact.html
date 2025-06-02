@@ -1,0 +1,37 @@
+---
+layout: page
+title: ""
+sub_title: |
+  Contact Us
+header_image: "/assets/images/art/bg3.webp"
+white_menu: true
+
+contact_form:
+  enable: true
+  title: "Reach Out to Us for any Enquiries"
+  sub_title: "For more information please get in touch using the form below:"
+  action_email: "https://formspree.io/f/xkgrydnw"
+  email_contact: info@Centre4teens.org
+  bg_image: "/assets/images/art/bg20.webp"
+  forms_data:
+    - field_type: "input"
+      field_name: "name"
+      placeholder: "Full Name"
+      error_message: "Full Name Is required"
+
+    - field_type: "input"
+      field_name: "email"
+      placeholder: "Email"
+      error_message: "Email Is required"
+
+    - field_type: "textarea"
+      field_name: "message"
+      placeholder: "Message"
+      error_message: "Message Is required"
+
+google_maps:
+  enable: true
+permalink: /contact
+---
+
+{% include contact/contact-2.html %} {% include contact/gmap.html %}
