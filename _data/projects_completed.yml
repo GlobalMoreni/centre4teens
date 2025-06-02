@@ -2,23 +2,23 @@ completed_projects:
   enable: true
   bg_image: "/assets/images/art/bg15.webp"
   lists:
-    - numbers: "20,000"
+    - numbers: "20000"
       title: "Number of people reached "
 
-    - numbers: "15,000"
+    - numbers: "15000"
       title: "People Trained on reusable pads making"
 
     - numbers: "6"
       title: "States reached"
 
-    - numbers: "70,000"
+    - numbers: "70000"
       title: "MO Reusable pads distributed"
 
-    - numbers: "6,000"
+    - numbers: "6000"
       title: "Dignity kits reached"
 
-    - numbers: "3,000"
+    - numbers: "3000"
       title: "Adolescent manual distributed "
 
-    - numbers: "15,000"
+    - numbers: "15000"
       title: "Number of people Impacted"
