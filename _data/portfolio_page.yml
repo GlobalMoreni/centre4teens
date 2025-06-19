@@ -149,8 +149,8 @@ portfolios_area:
 
     - title: "Paáta (Underwear) Campaign (1)"
       sub_title: "Paáta (Underwear) Campaign Photo"
-      sm_image: "/assets/images/projects/Paáta (Underwear) Campaign/1.JPG"
-      big_image: "/assets/images/projects/Paáta (Underwear) Campaign/1.JPG"
+      sm_image: "/assets/images/projects/Paáta (Underwear) Campaign/1.jpeg"
+      big_image: "/assets/images/projects/Paáta (Underwear) Campaign/1.jpeg"
       url: "#"
       filters:
         - "Paáta (Underwear) Campaign"
