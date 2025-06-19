@@ -7,12 +7,12 @@ portfolios_area:
   categories:
     - title: "BoyThrive Conference"
       filter: "BoyThrive"
-    - title: "Catalyst of Change Program"
-      filter: "Catalyst_of_Change_Program"
     - title: "Cloth Distribution Project"
       filter: "Cloth Distribution Project"
     - title: "Mental Health Awareness Program"
       filter: "Mental Health Awareness Program"
+    - title: "Paáta (Underwear) Campaign"
+      filter: "Paáta (Underwear) Campaign"
     - title: "Project Education & Reproductive Health"
       filter: "Project Education & Reproductive Health"
     - title: "Project Empower Her"
@@ -66,48 +66,6 @@ portfolios_area:
       url: "#"
       filters:
         - "BoyThrive"
-
-    # Catalyst of Change Program
-
-    - title: "Michael Ogunbiyi"
-      sub_title: "Catalyst of Change Program"
-      sm_image: "/assets/images/projects/Catalyst of Change Program/IMG_2196.PNG"
-      big_image: "/assets/images/projects/Catalyst of Change Program/IMG_2196.PNG"
-      url: "#"
-      filters:
-        - Catalyst_of_Change_Program
-
-    - title: "Lucky Owoicho"
-      sub_title: "Catalyst of Change Program"
-      sm_image: "/assets/images/projects/Catalyst of Change Program/IMG_2197.PNG"
-      big_image: "/assets/images/projects/Catalyst of Change Program/IMG_2197.PNG"
-      url: "#"
-      filters:
-        - Catalyst_of_Change_Program
-
-    - title: "Virtual Session Screenshot"
-      sub_title: "Catalyst of Change Program"
-      sm_image: "/assets/images/projects/Catalyst of Change Program/IMG_2198.PNG"
-      big_image: "/assets/images/projects/Catalyst of Change Program/IMG_2198.PNG"
-      url: "#"
-      filters:
-        - Catalyst_of_Change_Program
-
-    - title: "Virtual Session Screenshot"
-      sub_title: "Catalyst of Change Program"
-      sm_image: "/assets/images/projects/Catalyst of Change Program/IMG_2199.PNG"
-      big_image: "/assets/images/projects/Catalyst of Change Program/IMG_2199.PNG"
-      url: "#"
-      filters:
-        - Catalyst_of_Change_Program
-
-    - title: "Virtual Session Screenshot"
-      sub_title: "Catalyst of Change Program"
-      sm_image: "/assets/images/projects/Catalyst of Change Program/IMG_2200.PNG"
-      big_image: "/assets/images/projects/Catalyst of Change Program/IMG_2200.PNG"
-      url: "#"
-      filters:
-        - Catalyst_of_Change_Program
 
     - title: "Cloth Distribution (1)"
       sub_title: "Cloth Distribution Project Photo"
@@ -188,6 +146,42 @@ portfolios_area:
       url: "#"
       filters:
         - "Mental Health Awareness Program"
+
+    - title: "Paáta (Underwear) Campaign (1)"
+      sub_title: "Paáta (Underwear) Campaign Photo"
+      sm_image: "/assets/images/projects/Paáta (Underwear) Campaign/1.JPG"
+      big_image: "/assets/images/projects/Paáta (Underwear) Campaign/1.JPG"
+      url: "#"
+      filters:
+        - "Paáta (Underwear) Campaign"
+    - title: "Paáta (Underwear) Campaign (2)"
+      sub_title: "Paáta (Underwear) Campaign Photo"
+      sm_image: "/assets/images/projects/Paáta (Underwear) Campaign/2.JPG"
+      big_image: "/assets/images/projects/Paáta (Underwear) Campaign/2.JPG"
+      url: "#"
+      filters:
+        - "Paáta (Underwear) Campaign"
+    - title: "Paáta (Underwear) Campaign (3)"
+      sub_title: "Paáta (Underwear) Campaign Photo"
+      sm_image: "/assets/images/projects/Paáta (Underwear) Campaign/3.JPG"
+      big_image: "/assets/images/projects/Paáta (Underwear) Campaign/3.JPG"
+      url: "#"
+      filters:
+        - "Paáta (Underwear) Campaign"
+    - title: "Paáta (Underwear) Campaign (4)"
+      sub_title: "Paáta (Underwear) Campaign Photo"
+      sm_image: "/assets/images/projects/Paáta (Underwear) Campaign/4.JPG"
+      big_image: "/assets/images/projects/Paáta (Underwear) Campaign/4.JPG"
+      url: "#"
+      filters:
+        - "Paáta (Underwear) Campaign"
+    - title: "Paáta (Underwear) Campaign (5)"
+      sub_title: "Paáta (Underwear) Campaign Photo"
+      sm_image: "/assets/images/projects/Paáta (Underwear) Campaign/5.JPG"
+      big_image: "/assets/images/projects/Paáta (Underwear) Campaign/5.JPG"
+      url: "#"
+      filters:
+        - "Paáta (Underwear) Campaign"
 
     - title: "Project Education & Reproductive Health (1)"
       sub_title: "Project Education & Reproductive Health Photo"
