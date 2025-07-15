@@ -2,7 +2,10 @@
 {% if site.data.portfolio_index.portfolios_area.enable %}
 <div class="wrapper light-wrapper">
   <div class="container inner">
-    <h2 class="section-title text-center" style="font-size: 1.5rem; color: red">
+    <h2
+      class="section-title text-center"
+      style="font-size: 1.5rem; color: #025fc2"
+    >
       {{site.data.portfolio_index.portfolios_area.title}}
     </h2>
     <p class="lead larger text-center">
@@ -25,10 +28,12 @@
                 </a>
               </figure>
               <div class="post-content">
-                <h2 class="post-title mb-10 color-red">
+                <h2 class="post-title mb-10" style="color: #025fc2">
                   <a href="{{portfolio.url}}">{{portfolio.title}}</a>
                 </h2>
-                <div class="meta mb-0 color-red">{{portfolio.sub_title}}</div>
+                <div class="meta mb-0" style="color: #025fc2">
+                  {{portfolio.sub_title}}
+                </div>
               </div>
               <!-- /.post-content -->
             </div>
