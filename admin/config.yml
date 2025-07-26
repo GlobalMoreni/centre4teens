@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: https://github.com/elishaadamu/centre4teens.org
+  branch: main # or "master"
+  base_url: https://elishadamu97.github.io/blog/
+  auth_endpoint: oauth/authorize
+
+  # Add this line to use your OAuth endpoint (step 4)
+  auth_scope: repo
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
