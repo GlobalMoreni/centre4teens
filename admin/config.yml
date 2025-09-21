@@ -1,23 +1,17 @@
 backend:
-  name: github
-  repo: KitgakSimon/centre4teens
-  branch: main
-  # open_authoring: true
-  publish_mode: simple
+  name: git-gateway
+  branch: main # Or your default branch
 
-  # Add this line to use your OAuth endpoint (step 4)
-  auth_scope: repo
-
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
 
 collections:
   - name: "posts"
-    label: "Blog Posts"
+    label: "Posts"
     folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
