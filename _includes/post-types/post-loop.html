@@ -1,17 +1,14 @@
 {% if post.thumbnail %}
 <figure class="overlay overlay1 rounded mb-30">
-  <a href="/blogs/{{post.slug}}"
-    ><img
-      class="post-thumb"
-      src="{{post.thumbnail.fields.file.url}}"
-      alt="{{post.title}}"
+  <a href="{{post.url}}"
+    ><img class="post-thumb" src="{{post.thumbnail}}" alt="{{post.title}}"
   /></a>
   <figcaption>
     <h5 class="from-top mb-0">Read More</h5>
   </figcaption>
 </figure>
 {% endif %}
-<h2 class="post-title"><a href="/blogs/{{post.slug}}">{{post.title}}</a></h2>
+<h2 class="post-title"><a href="{{post.url}}">{{post.title}}</a></h2>
 <div class="post-content">
   <p>{{post.content | strip_html | truncatewords: 25}}</p>
 </div>

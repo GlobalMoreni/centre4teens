@@ -69,17 +69,10 @@
                 class="badge rounded-pill {{badge_color}}">{{page.categories[0]}}</a>
             </div>
             {% endif %}
-            <h2 class="post-title text-center">{{page.title}}</h2>
-            <div class="meta text-center">
-              {% if page.date %}
-              <span class="date"><i class="jam jam-clock"></i>{{page.date | date_to_string}}</span>
-              {% endif %}
-              {% if page.author %}
-              <span class="author"><i class="jam jam-user"></i><a href="/author/{{page.author | slugify}}">By
-                  {{page.author}}</a></span>
-              {% endif %}
+           
+            <div class="post-content-wrapper">
+              {{page.content}}
             </div>
-            {{page.content}}
             {% if page.post_format == "gallery" %}
             <div class="space20"></div>
             <div class="post-gallery light-gallery-wrapper">
