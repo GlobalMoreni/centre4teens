@@ -1,0 +1,6 @@
+space: pul2q4a1u1k3
+access_token: YOUR_ACCESS_TOKEN
+
+cda_query:
+  - content_type: post
+    data: posts

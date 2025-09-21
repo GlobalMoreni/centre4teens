@@ -10,6 +10,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-archives
+  - jekyll-contentful-data-import
 
 collections:
   authors:
@@ -102,3 +103,9 @@ feed:
       path: "/index.xml"
 
 highlighter: rouge
+
+contentful:
+  spaces:
+    - c4t:
+        space_id: CONTENTFUL_SPACE_ID
+        access_token: CONTENTFUL_ACCESS_TOKEN

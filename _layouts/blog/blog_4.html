@@ -10,7 +10,7 @@ layout: default
       <div class="col-lg-8">
         <div class="blog grid grid-view">
           <div class="row isotope">
-            {% for post in paginator.posts %}
+            {% for post in site.data.posts %}
             <div class="item post grid-sizer col-md-6">
               {% include post-types/post-loop.html %}
             </div>
@@ -20,7 +20,7 @@ layout: default
           <!-- /.row -->
         </div>
         <!-- /.blog -->
-        {% include pagination.html %}
+        
       </div>
       <!--/column -->
       <div class="space30 d-none d-md-block d-lg-none"></div>
