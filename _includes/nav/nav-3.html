@@ -1,7 +1,7 @@
 <style></style>
-<!--  Nav Name :Classic Dark Header -->
+<!--  Nav Name :Classic Header -->
 <nav
-  class="navbar {% if include.extra_class %} {{include.extra_class}} {% endif %} dark-wrapper inverse-text navbar-hover-opacity navbar-expand-lg nav-uppercase "
+  class="navbar absolute transparent inverse-text navbar-hover-opacity nav-uppercase navbar-expand-lg"
 >
   <div class="container">
     <div
@@ -9,7 +9,9 @@
       data-default-logo="{{ include.default_logo | default: 'white' }}"
     >
       <!-- White Logo -->
-      <a href="{{site.url}}"
+      <a
+        href="{{site.url}}"
+        class="flex justify-content-center align-items-center gap-1"
         ><img
           src="{{site.data.general_settings.light_logo_1x}}"
           srcset="
@@ -18,7 +20,30 @@
           "
           class="logo-light {% if include.default_logo == 'black' %}d-none{% endif %}"
           alt="{{site.data.general_settings.title}}"
-      >
+        />
+        <div class="flex flex-col tagname">
+          <p
+            style="
+              font-size: 10px;
+              margin-bottom: 0px;
+              margin-top: -10px;
+              font-weight: 600;
+            "
+          >
+            Centre for Teens
+          </p>
+          <p
+            style="
+              font-size: 10px;
+              margin-bottom: -5px;
+              margin-top: -10px;
+              font-weight: 600;
+            "
+          >
+            Health and Development
+          </p>
+        </div>
+      </a>
 
       <a href="{{site.url}}">
         <!-- Black Logo -->
@@ -32,6 +57,16 @@
           alt="{{site.data.general_settings.title}}"
       /></a>
     </div>
+
+    <div class="navbar-other ms-auto order-lg-3">
+      <ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+        {% include nav/_hamburger.html %} {% if include.btn_header %} {% include
+        nav/_btn-header.html %} {% endif %} {% if include.drop_search %} {%
+        include nav/_drop-search.html %} {% endif %}
+      </ul>
+      <!-- /.navbar-nav -->
+    </div>
+    <!-- /.navbar-other -->
     <div class="navbar-collapse offcanvas-nav">
       <div class="offcanvas-header d-lg-none d-xl-none">
         <a href="{{site.url}}">
@@ -145,6 +180,7 @@
     />
   </a>
   <div class="space30"></div>
+  <!-- 
   <p>{{site.data.general_settings.description}}</p>
   <div class="space20"></div>
   <div class="widget">
@@ -158,7 +194,7 @@
       {{site.data.general_settings.phone_number}}
     </address>
   </div>
-  <!-- /.widget -->
+  /.widget -->
   <div class="widget">
     {% if site.data.general_settings.external_links.title %}
     <h3 class="widget-title">
