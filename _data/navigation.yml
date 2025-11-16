@@ -17,6 +17,9 @@ main_menu:
   - text: "Blog"
     url: "/blogs"
 
+  - text: "Research Insights"
+    url: "/research-insights"
+
   - text: "Contact Us"
     url: "/contact"
 
