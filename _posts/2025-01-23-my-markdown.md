@@ -7,7 +7,6 @@ tags: [markdown, post]
 author: "Your Name"
 excerpt: "This is an example of a markdown post in Jekyll."
 ---
-
 ## This is a sample markdown post to demonstrate how Jekyll processes markdown files.
 
-lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. hi
