@@ -1,0 +1,67 @@
+{% assign research_page = site.pages | where: "permalink", "/research-insights" | first %}
+{% if research_page and research_page.research_papers %}
+<style>
+  .research-list .card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  .research-list .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border-color: var(--custom-color, #5c6ac4);
+  }
+  .research-list .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+  }
+</style>
+
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <h2 class="section-title text-center">Research Insights</h2>
+    <p class="lead larger text-center">
+      Exploring our research on youth empowerment, education, and community development.
+    </p>
+    <div class="space40"></div>
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="research-list">
+          {% for paper in research_page.research_papers %}
+          <div class="card">
+            <a
+              href="{{ paper.pdf_url | relative_url }}"
+              class="card-body"
+              target="_blank"
+            >
+              <div class="d-flex align-items-center">
+                <span class="h3 mb-0 mr-4 color-primary"
+                  >{{ forloop.index }}.</span
+                >
+                <div>
+                  <h5 class="mb-0 font-weight-500">{{ paper.title }}</h5>
+                </div>
+              </div>
+              <span class="btn btn-sm btn-primary d-none d-md-inline-block"
+                >View PDF</span
+              >
+              <i class="jam jam-arrow-right d-inline-block d-md-none"></i>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="space20"></div>
+        <div class="text-center">
+          <a href="{{ '/research-insights' | relative_url }}" class="btn btn-more">View All Research</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

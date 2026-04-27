@@ -2,18 +2,550 @@
   {{page.clients_area.title}}
 </h2>
 <div class="space20"></div>
-<div
-  class="carousel owl-carousel clients"
-  data-margin="30"
-  data-loop="true"
-  data-dots="false"
-  data-autoplay="true"
-  data-autoplay-timeout="3000"
-  data-responsive='{"0":{"items": "2"}, "768":{"items": "4"}, "992":{"items": "5"}, "1140":{"items": "6"}}'
->
-  {% for image in site.data.clients_carousel.partners.images %}
-  <div class="item pl-15 pr-15">
-    <img src="{{image.img}}" alt="{{image.img}}" />
+
+<div id="imageModal" class="image-modal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeImageModal()">&times;</span>
+    <img id="modalImage" src="" alt="Sponsor Logo" />
   </div>
-  {% endfor %}
 </div>
+
+<div class="sponsors-pagination-container">
+  <div class="sponsors-grid" id="sponsorsGrid">
+    <!-- Sponsors will be loaded here via JavaScript -->
+  </div>
+  
+  <div class="pagination-controls">
+    <button class="pagination-btn" id="prevBtn" onclick="previousPage()">
+      <span style="font-size: 20px;">&#10094;</span> Previous
+    </button>
+    <div class="control-group">
+      <button class="control-btn" id="playBtn" onclick="toggleAutoPlay()" title="Play">
+        ▶ Play
+      </button>
+      <button class="control-btn pause-hidden" id="pauseBtn" onclick="toggleAutoPlay()" title="Pause">
+        ⏸ Pause
+      </button>
+    </div>
+    <span class="pagination-info" id="pageInfo"></span>
+    <button class="pagination-btn" id="nextBtn" onclick="nextPage()">
+      Next <span style="font-size: 20px;">&#10095;</span>
+    </button>
+  </div>
+</div>
+
+<style>
+  .image-modal {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .modal-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    max-height: 90vh;
+    overflow: auto;
+    animation: scaleIn 0.3s ease-in-out;
+  }
+
+  .modal-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #e94b3c;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(233, 75, 60, 0.1);
+  }
+
+  .modal-close:hover {
+    background: rgba(233, 75, 60, 0.2);
+    transform: scale(1.2) rotate(90deg);
+  }
+
+  #modalImage {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+
+  .sponsor-item {
+    cursor: pointer;
+  }
+
+  .sponsors-pagination-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(249, 249, 249, 0.95) 100%);
+    padding: 40px 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+
+  .sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    scroll-behavior: smooth;
+    animation: slideIn 0.5s ease-in-out;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .sponsor-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+  }
+
+  .sponsor-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+  }
+
+  .sponsor-item:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(233, 75, 60, 0.15), 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-color: #e94b3c;
+    background: linear-gradient(135deg, #ffffff 0%, #fff8f7 100%);
+  }
+
+  .sponsor-item:hover::before {
+    left: 100%;
+  }
+
+  .sponsor-item img {
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+  }
+
+  .sponsor-item:hover img {
+    transform: scale(1.1);
+  }
+
+  .pagination-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .pagination-btn {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #e94b3c 0%, #d63a2e 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(233, 75, 60, 0.25);
+    letter-spacing: 0.5px;
+  }
+
+  .pagination-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(233, 75, 60, 0.35);
+  }
+
+  .pagination-btn:active {
+    transform: translateY(0);
+  }
+
+  .pagination-btn:disabled {
+    background: linear-gradient(135deg, #e0e0e0 0%, #d0d0d0 100%);
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.6;
+  }
+
+  .control-group {
+    display: flex;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 6px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+  }
+
+  .control-btn {
+    padding: 11px 18px;
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 3px 10px rgba(76, 175, 80, 0.25);
+    letter-spacing: 0.3px;
+  }
+
+  .control-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(76, 175, 80, 0.35);
+  }
+
+  .control-btn:active {
+    transform: translateY(0);
+  }
+
+  .pause-hidden {
+    display: none;
+  }
+
+  .pagination-info {
+    font-weight: 700;
+    color: #2c3e50;
+    min-width: 110px;
+    text-align: center;
+    font-size: 15px;
+    background: rgba(233, 75, 60, 0.08);
+    padding: 8px 16px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 768px) {
+    .sponsors-pagination-container {
+      padding: 30px 15px;
+      gap: 30px;
+    }
+
+    .sponsors-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 18px;
+    }
+
+    .sponsor-item {
+      height: 120px;
+      padding: 10px;
+    }
+
+    .pagination-controls {
+      gap: 12px;
+      padding: 15px 20px;
+    }
+
+    .pagination-btn,
+    .control-btn {
+      padding: 10px 15px;
+      font-size: 12px;
+    }
+
+    .control-group {
+      gap: 8px;
+    }
+
+    .pagination-info {
+      min-width: 90px;
+      font-size: 13px;
+      padding: 6px 12px;
+    }
+
+    .modal-content {
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .sponsors-pagination-container {
+      padding: 20px 10px;
+      gap: 20px;
+    }
+
+    .sponsors-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 12px;
+      padding: 0 8px;
+    }
+
+    .sponsor-item {
+      height: 100px;
+      padding: 8px;
+      border-radius: 8px;
+    }
+
+    .sponsor-item:hover {
+      transform: translateY(-8px) scale(1.03);
+    }
+
+    .pagination-btn,
+    .control-btn {
+      padding: 8px 10px;
+      font-size: 10px;
+    }
+
+    .pagination-controls {
+      gap: 6px;
+      padding: 10px 8px;
+      flex-direction: row;
+    }
+
+    .pagination-info {
+      min-width: 70px;
+      font-size: 10px;
+      padding: 4px 8px;
+    }
+
+    .control-group {
+      gap: 5px;
+    }
+
+    .modal-content {
+      max-width: 95%;
+      padding: 15px;
+    }
+
+    .modal-close {
+      font-size: 24px;
+      right: 8px;
+      top: 5px;
+    }
+  }
+</style>
+
+<script>
+  let currentPage = 1;
+  let autoPlayActive = true;
+  let autoPlayInterval = null;
+  let modalAutoPlayWasActive = false;
+  const itemsPerPage = 10;
+  const autoPlayDelay = 8000; // 8 seconds
+  const allSponsors = [
+    {% for image in site.data.clients_carousel.partners.images %}
+    { img: '{{image.img}}', alt: '{{image.alt}}', url: '{{image.url}}' },
+    {% endfor %}
+  ];
+  const totalPages = Math.ceil(allSponsors.length / itemsPerPage);
+
+  function displaySponsors(page) {
+    const grid = document.getElementById('sponsorsGrid');
+    const pageInfo = document.getElementById('pageInfo');
+    const startIdx = (page - 1) * itemsPerPage;
+    const endIdx = startIdx + itemsPerPage;
+    const pageSponsors = allSponsors.slice(startIdx, endIdx);
+
+    grid.innerHTML = pageSponsors.map(sponsor => `
+      <div class="sponsor-item" onclick="openImageModal('${sponsor.img}', '${sponsor.alt}')">
+        <img src="${sponsor.img}" alt="${sponsor.alt}" />
+      </div>
+    `).join('');
+
+    pageInfo.textContent = `Page ${page} of ${totalPages}`;
+    document.getElementById('prevBtn').disabled = page === 1;
+    document.getElementById('nextBtn').disabled = page === totalPages;
+
+    // Smooth scroll to top of grid
+    grid.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function openImageModal(imageSrc, altText) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    
+    // Store current autoplay state and stop it
+    modalAutoPlayWasActive = autoPlayActive;
+    if (autoPlayActive) {
+      toggleAutoPlay();
+    }
+    
+    modalImg.src = imageSrc;
+    modalImg.alt = altText;
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeImageModal() {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+    
+    // Resume autoplay if it was active before
+    if (modalAutoPlayWasActive && !autoPlayActive) {
+      toggleAutoPlay();
+    }
+  }
+
+  // Close modal when clicking outside the image
+  window.onclick = function(event) {
+    const modal = document.getElementById('imageModal');
+    if (event.target === modal) {
+      closeImageModal();
+    }
+  };
+
+  // Close modal with Escape key
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+      const modal = document.getElementById('imageModal');
+      if (modal.style.display === 'block') {
+        closeImageModal();
+      }
+    }
+  });
+
+  function nextPage() {
+    if (currentPage < totalPages) {
+      currentPage++;
+      displaySponsors(currentPage);
+      resetAutoPlay();
+    }
+  }
+
+  function previousPage() {
+    if (currentPage > 1) {
+      currentPage--;
+      displaySponsors(currentPage);
+      resetAutoPlay();
+    }
+  }
+
+  function toggleAutoPlay() {
+    autoPlayActive = !autoPlayActive;
+    
+    if (autoPlayActive) {
+      document.getElementById('playBtn').classList.add('pause-hidden');
+      document.getElementById('pauseBtn').classList.remove('pause-hidden');
+      startAutoPlay();
+    } else {
+      document.getElementById('pauseBtn').classList.add('pause-hidden');
+      document.getElementById('playBtn').classList.remove('pause-hidden');
+      stopAutoPlay();
+    }
+  }
+
+  function startAutoPlay() {
+    stopAutoPlay();
+    autoPlayInterval = setInterval(() => {
+      if (currentPage < totalPages) {
+        currentPage++;
+      } else {
+        currentPage = 1;
+      }
+      displaySponsors(currentPage);
+    }, autoPlayDelay);
+  }
+
+  function stopAutoPlay() {
+    if (autoPlayInterval) {
+      clearInterval(autoPlayInterval);
+      autoPlayInterval = null;
+    }
+  }
+
+  function resetAutoPlay() {
+    if (autoPlayActive) {
+      startAutoPlay();
+    }
+  }
+
+  // Initialize on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    displaySponsors(currentPage);
+    startAutoPlay();
+    // Update pause button visibility initially
+    document.getElementById('playBtn').classList.add('pause-hidden');
+    document.getElementById('pauseBtn').classList.remove('pause-hidden');
+  });
+
+  // Stop autoplay when user leaves the page
+  window.addEventListener('beforeunload', () => {
+    stopAutoPlay();
+  });
+</script>
