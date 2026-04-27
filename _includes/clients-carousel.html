@@ -431,8 +431,7 @@
     document.getElementById('prevBtn').disabled = page === 1;
     document.getElementById('nextBtn').disabled = page === totalPages;
 
-    // Smooth scroll to top of grid
-    grid.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    // Removed auto-scroll to prevent page jumping during autoplay
   }
 
   function openImageModal(imageSrc, altText) {
